@@ -36,7 +36,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'django.contrib.sites',
 	'app',
+	'bitly',
+	'twilio',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -85,3 +88,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+BITLY_LOGIN = "aminoss92"
+
+BITLY_API_KEY = "R_197ded926bd2db718ee9fb325454670a"
+
+SITE_ID = 1
+
+account_id = "ACf71c0db239a537d8f4647ddabae65d12"
+
+auth_token = "86ca1e9472dd730c26552aea7cf44fa5"
+
+
