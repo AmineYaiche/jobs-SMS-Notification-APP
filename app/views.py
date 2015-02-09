@@ -12,7 +12,6 @@ def fetch(url):
 	parsed = r.json()
 	jobs = parsed["objects"]
 
-
 	for j in jobs:
 		if len( job.objects.filter(title=j['title'].encode("utf-8")).filter(recruiter=j['recruiter'].encode("utf-8"))):
 			break
