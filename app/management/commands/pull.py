@@ -3,9 +3,6 @@ from app.models import job , contact
 from twilio.rest import TwilioRestClient
 from app.views import fetch , send
 
-def bitlify(url):
-	return Bittle.objects.bitlify(url).shortUrl
-
 
 class Command(BaseCommand):
 	def handle(self, *args , **options):
