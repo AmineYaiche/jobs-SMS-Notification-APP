@@ -4,6 +4,7 @@ This app aims to send SMS to the contact list that contains announcements fetche
 Installation
 ------------
 [X]
+
 Just lunch the command `pip -r requirement.txt`
 
 Commands
@@ -15,8 +16,6 @@ This project have two commands:
 - `python manage.py send <nbr_announcements>` to send the last `nbr_announcements` to the contact list. By default `nbr_anouncements` is 5.
 
 
-
 [Keejob's API] : http://www.keejob.com/api/v1/najahni-jobs/?api_key=NajahniService
-
 
 [X] : http://www.google.com
