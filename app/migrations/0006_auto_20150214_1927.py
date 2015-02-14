@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='contact',
             name='phone_number',
-            field=models.CharField(max_length=12, validators=[app.models.validate_number]),
+            field=models.CharField(max_length=12),
             preserve_default=True,
         ),
     ]

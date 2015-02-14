@@ -3,7 +3,7 @@ from django.core.exceptions import 	ValidationError
 import re
 
 
-class job(models.Model):
+class Job(models.Model):
 	title = models.CharField(max_length=300)
 	recruiter = models.CharField(max_length=300)
 	link= models.URLField()
@@ -11,7 +11,7 @@ class job(models.Model):
 	def __str__(self):
 		return self.title
 
-class contact(models.Model):
+class Contact(models.Model):
 	first_name = models.CharField(max_length = 30)
 	last_name = models.CharField(max_length = 30)
 	phone_number = models.CharField(max_length = 12)
