@@ -4,7 +4,9 @@ from app.api import send
 
 class Command(BaseCommand):
 	def handle(self, *args , **options):
-
-		send(jobs)
-
-
+	
+		try:
+			send(args[0])
+		except IndexError:
+			send(5)
+			

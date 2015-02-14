@@ -8,7 +8,7 @@ def bitlify(url):
 	return Bittle.objects.bitlify(url).shortUrl
 
 
-def fetch(url):
+def pull(url):
 	"""fetch new jobs from the API and add them to the database"""
 	r = requests.get(url)
 	parsed = r.json()
@@ -21,19 +21,19 @@ def fetch(url):
 		elem = job()
 		elem.title= str(j['title'].encode("utf-8"))
 		elem.recruiter=str(j['recruiter'].encode("utf-8"))
-		elem.link = bitlify(j['link'])
+#		elem.link = bitlify(j['link'])
+		elem.link = j['link']
 		elem.save()
-	return job.objects.all()[:4] #returing the 5 recent jobs
+	return job.objects.all()
 
-
-
-def send(jobs):
-	""" send jobs passed by argument to the contact list"""
+def send(nbr):
+	""" send jobs to the contact laist"""
+	jobs = job.objects.all()[:nbr]
 	contacts = contact.objects.all()
-
 	for j in jobs:
 		for c in contacts:
-			message = "Hey {}, {} has published a new job {} {}".format(c.first_name , j.recruiter , j.title  , j.link)
+			print("x")
+			message = "Hey {}, {} has published a new job {} {}".format(c.first_name , j.recruiter , j.title.encode("utf-8") , j.link)
 
 			account_sid = "ACf71c0db239a537d8f4647ddabae65d12"
 			auth_token = "86ca1e9472dd730c26552aea7cf44fa5"
