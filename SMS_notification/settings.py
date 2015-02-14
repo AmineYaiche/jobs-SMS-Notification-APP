@@ -91,8 +91,8 @@ BITLY_API_KEY = "R_197ded926bd2db718ee9fb325454670a"
 
 SITE_ID = 1
 
-account_id = "ACf71c0db239a537d8f4647ddabae65d12"
+ACCOUNT_ID = "ACf71c0db239a537d8f4647ddabae65d12"
 
-auth_token = "86ca1e9472dd730c26552aea7cf44fa5"
+AUTH_TOKEN = "86ca1e9472dd730c26552aea7cf44fa5"
 
 
