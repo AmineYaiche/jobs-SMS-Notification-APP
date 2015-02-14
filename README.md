@@ -1,7 +1,7 @@
 jobs-SMS-Notification-APP
 =========================
 
-This app aims to send SMS to the contact list that contains announcements fetched from the [Keejob's API]
+This app aims to send SMS to the contact list containing announcements fetched from the [Keejob's API]
 
 
 Installation
