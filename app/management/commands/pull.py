@@ -1,7 +1,5 @@
 from django.core.management.base import BaseCommand, CommandError
-from app.models import job , contact
-from twilio.rest import TwilioRestClient
-from app.views import fetch , send
+from app.api import fetch , send
 
 
 class Command(BaseCommand):

@@ -38,8 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 	'django.contrib.sites',
 	'app',
-	'bitly',
-	'twilio',
 )
 
 MIDDLEWARE_CLASSES = (
